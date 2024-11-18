@@ -1,11 +1,13 @@
 from flask import Flask, jsonify, request, abort
-app = Flask(__nombre__)
+
+app = Flask(__name__)
 
 # Lista simulando una base de datos
 users = [
-    {"id": 1, "name": "Leonardo", "lastname": "Mejia", "hobbies": ["leer"]},
-    {"id": 2, "name": "Jhunior", "lastname": "Herrera", "hobbies": ["jugar fútbol"]},
-    {"id": 3, "name": "Gian", "lastname": "Quezada", "hobbies": [ "escuchar música"]},
+{"id": 1, "name": "José", "lastname": "Cueva", "hobbies": ["leer"]},
+{"id": 2, "name": "Jhunior", "lastname": "Herrera", "hobbies": ["jugar fútbol"]},
+{"id": 3, "name": "Sthephany", "lastname": "Toribio", "hobbies": ["escuchar música"]},
+{"id": 4, "name": "Nardy", "lastname": "Condori", "hobbies": ["ir de compras"]}
 ]
 
 # ---> https://cayetanoestudiantes.upch.pe/users?user=1
